@@ -1,0 +1,19 @@
+# Ignore binary files
+/bin/
+/obj/
+
+# Ignore Go workspace files
+*.exe
+*.test
+*.out
+
+# VS Code settings
+.vscode/
+
+# Go vendor directory
+/vendor/
+
+# Go build artifacts
+*.log
+*.exe
+*.test
