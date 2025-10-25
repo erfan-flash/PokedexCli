@@ -1,5 +1,16 @@
 package main
 
+import "github.com/erfan-flash/PokedexCli/internals/pokedeapi"
+
+type config struct {
+	pokeapiClient pokedeapi.Client
+	nextLocationArea *string
+	prevLocationAtrea *string
+}
+
 func main() {
-	startRepl()
+	cfg := config{
+		pokeapiClient: pokedeapi.NewClient(),
+	}
+	startRepl(&cfg)
 }
